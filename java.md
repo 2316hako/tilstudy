@@ -4,9 +4,11 @@ public class Main {
     System.out.println("Hello World");
   }
 }
+
 実行結果
 Hello World
 と表示表示されます。なので"Hello World"の記載を書き換えてあげることで、実行結果を好きな英文、日本語に変更することができます。
+
 
 # 計算をしよう
 public class Main {
@@ -15,14 +17,27 @@ public class Main {
     System.out.println(200 + 150);
   }
 }
+
 実行結果
 じゃがいも200円と人参150円の合計金額
 350
 と表示をされます。+の他にも、-や*(掛け算)や/(割り算)などの記号も使用できます。
+
 例
 System.out.println(35 - 10);         --- 25
 System.out.println(-5 * 2);          --- -10
 System.out.println(10 / 5);          --- 2
 System.out.println("こたえは" + 50); ---こたは50
 
+
 # 変数を使ってみよう
+public class Main {
+  public static void main(String[] args) {
+    int x;   --- 変数xを準備する
+    x = 6    --- xに6を入れる
+    System.out.println(x * x * 3.14);
+  }
+}
+
+実行結果
+113.04
