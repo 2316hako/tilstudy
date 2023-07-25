@@ -117,3 +117,18 @@ public class Main {public static void main(String[] args) {System.out.println("�
 コメント文2 単一行コメント
 // コメント本文(行末まで)
 
+# 変数宣言の文
+変数宣言の文とは、「新たな変数を準備せよ」とコンピュータに指示する文です。
+変数とはデータを格納するためにコンピュータ内部に準備する箱のようなもので、数値や文字列などプログラムが扱うさまざまな情報を入れたり取り出したり出来ます。
+
+例 変数宣言の文
+public class Main {
+  public static void main(String[] args) {
+    int age;   ---変数宣言の文(ageという箱を用意)
+    age = 30;   ---箱に数字の「30」を入れる
+    System.out.println(age);   ---箱の中身を表示
+  }
+}
+
+実行結果
+30
