@@ -159,3 +159,35 @@ public class Main {
 ---------------------------------------------------------
 
 # 変数の初期化
+変数には異なる値を何度でも代入できます。
+
+例 変数の再代入
+public class Main {
+  public static void main(String[] args) {
+    int age = 20;
+    System.out.println("渡井の年齢は" + age);
+    age = 31;
+    System.out.println("・・・いや、本当の年齢は" + age);
+  }
+}
+
+実行結果
+私の年齢は20
+・・・いや、本当の年齢は31
+
+すでに値が入っている変数に代入をすると、古い値は消滅し、新しい値に内容が書き換わります。
+
+しかし、プログラムを開発していえると、「絶対に上書きされたくない」「内容が書き換えられたら困る」場合もあります。
+このような場合、finalという記述を加えることで書き換えを防止できます。
+
+ 定数の宣言
+final 型 定数名 = 初期値;
+
+例
+public class Main {
+  public static void main(String[] args) {
+    final int age = 20;
+  }
+}
+
+# 式の構成要素
